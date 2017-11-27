@@ -1,0 +1,9 @@
+.project-text {
+  @include project-overview;
+  .button-container {
+    @include cta-button(#EF9501);
+    .btn:hover {
+      box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

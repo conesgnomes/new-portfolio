@@ -425,3 +425,9 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  @media #{$breakpoint-xlarge} {
+    padding: 0 150px;
+  }
+}
