@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
+
+h1 {
+  font-family: "lato-black";
+  @media #{$breakpoint-xlarge} {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-family: "lato-bold";
+  @media #{$breakpoint-xlarge} {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-family: "lato-regular";
+  @media #{$breakpoint-xlarge} {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-family: "lato-regular";
+  color: #999999;
+  @media #{$breakpoint-xlarge} {
+    font-size: 14px;
+  }
+}
+
+p {
+  font-family: "lato-regular";
+  @media #{$breakpoint-xlarge} {
+    font-size: 14px;
+  }
+}
