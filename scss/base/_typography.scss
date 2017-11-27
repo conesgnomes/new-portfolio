@@ -1,3 +1,5 @@
+// Font from xl to small = 1.6x bigger and .625x smaller
+
 h1, h2, h3, h4, h5, h6, p, ul, a {
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@ h1, h2, h3, h4, h5, h6, p, ul, a {
 
 h1 {
   font-family: "lato-black";
+  font-size: 25px;
   @media #{$breakpoint-xlarge} {
     font-size: 40px;
   }
@@ -12,6 +15,7 @@ h1 {
 
 h2 {
   font-family: "lato-bold";
+  font-size: 18px;
   @media #{$breakpoint-xlarge} {
     font-size: 28px;
   }
@@ -19,7 +23,10 @@ h2 {
 
 h3 {
   font-family: "lato-regular";
+  font-size: 13px;
+  line-height: 22px;
   @media #{$breakpoint-xlarge} {
+    line-height: 35px;
     font-size: 20px;
   }
 }
@@ -27,6 +34,8 @@ h3 {
 h4 {
   font-family: "lato-regular";
   color: #999999;
+  font-size: 10px;
+  text-transform: uppercase;
   @media #{$breakpoint-xlarge} {
     font-size: 14px;
   }
@@ -34,7 +43,28 @@ h4 {
 
 p {
   font-family: "lato-regular";
+  font-size: 12px;
+  line-height: 12px;
   @media #{$breakpoint-xlarge} {
     font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.title {
+  font-family: "lato-black";
+  text-transform: uppercase;
+  font-size: 30px;
+  @media #{$breakpoint-xlarge} {
+    font-size: 48px;
+  }
+}
+
+.nav-item {
+  font-family: "lato-regular";
+  color: #999999;
+  font-size: 14px;
+  @media #{$breakpoint-xlarge} {
+    font-size: 22px;
   }
 }

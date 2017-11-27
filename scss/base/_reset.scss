@@ -427,6 +427,10 @@ template {
 }
 
 body {
+  padding: 0 20px;
+  @media #{$breakpoint-large} {
+    padding: 0 75px;
+  }
   @media #{$breakpoint-xlarge} {
     padding: 0 150px;
   }
