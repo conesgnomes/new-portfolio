@@ -1,0 +1,26 @@
+.bio-body {
+  @media #{$breakpoint-medium} {
+    padding: 0 75px;
+  }
+  @media #{$breakpoint-xlarge} {
+    padding: 0 150px;
+  }
+  h1 {
+    margin-bottom: 50px;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    @include cta-button(#000000);
+    .btn:hover {
+      box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
