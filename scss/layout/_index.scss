@@ -1,9 +1,60 @@
-.project-text {
-  @include project-overview;
-  .button-container {
-    @include cta-button(#EF9501);
-    .btn:hover {
-      box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+.index-header {
+  @media #{$breakpoint-medium} {
+    padding: 0 75px;
+  }
+  @media #{$breakpoint-xlarge} {
+    padding: 0 150px;
+  }
+  h2 {
+    margin-bottom: 50px;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    .social-item {
+      padding: 0 15px;
+      @media #{$breakpoint-medium} {
+        padding: 0 25px;
+      }
+    }
+  }
+}
+.index-body {
+  .project-left {
+    margin-top: 75px;
+    @media #{$breakpoint-medium} {
+      padding-left: 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding-left: 150px;
+    }
+    .afrikan-clothing-co {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row-reverse;
+      }
+      .project-image {
+        width: 100%;
+        @media #{$breakpoint-medium} {
+          width: 60%;
+        }
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      .project-text {
+        @include project-overview;
+        .button-container {
+          @include cta-button(#EF9501);
+          .btn:hover {
+            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
     }
   }
 }
