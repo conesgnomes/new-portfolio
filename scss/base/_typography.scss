@@ -8,6 +8,9 @@ h1, h2, h3, h4, h5, h6, p, ul, a {
 h1 {
   font-family: "lato-black";
   font-size: 25px;
+  @media #{$breakpoint-large} {
+    font-size: 32px;
+  }
   @media #{$breakpoint-xlarge} {
     font-size: 40px;
   }
@@ -16,8 +19,11 @@ h1 {
 h2 {
   font-family: "lato-bold";
   font-size: 18px;
+  @media #{$breakpoint-large} {
+    font-size: 22px;
+  }
   @media #{$breakpoint-xlarge} {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -25,9 +31,13 @@ h3 {
   font-family: "lato-regular";
   font-size: 13px;
   line-height: 22px;
+  @media #{$breakpoint-large} {
+    font-size: 16px;
+    line-height: 28px;
+  }
   @media #{$breakpoint-xlarge} {
-    line-height: 35px;
     font-size: 20px;
+    line-height: 35px;
   }
 }
 
@@ -36,6 +46,9 @@ h4 {
   color: #999999;
   font-size: 10px;
   text-transform: uppercase;
+  @media #{$breakpoint-large} {
+    font-size: 12px;
+  }
   @media #{$breakpoint-xlarge} {
     font-size: 14px;
   }
@@ -45,6 +58,10 @@ p {
   font-family: "lato-regular";
   font-size: 12px;
   line-height: 12px;
+  @media #{$breakpoint-large} {
+    font-size: 13px;
+    line-height: 16px;
+  }
   @media #{$breakpoint-xlarge} {
     font-size: 14px;
     line-height: 20px;
@@ -56,7 +73,7 @@ p {
     font-size: 36px;
     color: #000000;
     @media #{$breakpoint-xlarge} {
-      font-size: 48px;
+      font-size: 40px;
     }
   }
 }
@@ -65,7 +82,10 @@ p {
   font-family: "lato-black";
   text-transform: uppercase;
   font-size: 30px;
-  @media #{$breakpoint-xlarge} {
+  @media #{$breakpoint-large} {
+    font-size: 38px;
+  }
+  @media #{$breakpoint-large} {
     font-size: 48px;
   }
 }
@@ -76,8 +96,8 @@ p {
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
-  @media #{$breakpoint-xlarge} {
-    font-size: 22px;
+  @media #{$breakpoint-large} {
+    font-size: 18px;
   }
 }
 

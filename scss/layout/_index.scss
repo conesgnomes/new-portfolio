@@ -26,6 +26,7 @@
       padding-left: 75px;
     }
     @media #{$breakpoint-xlarge} {
+      margin-top: 150px;
       padding-left: 150px;
     }
     .afrikan-clothing-co {
@@ -50,6 +51,44 @@
         @include project-overview;
         .button-container {
           @include cta-button(#EF9501);
+          .btn:hover {
+            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .project-right {
+    margin-top: 75px;
+    @media #{$breakpoint-medium} {
+      padding-right: 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      margin-top: 150px;
+      padding-right: 150px;
+    }
+    .sq1-raffle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row;
+      }
+      .project-image {
+        width: 100%;
+        @media #{$breakpoint-medium} {
+          width: 60%;
+        }
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      .project-text {
+        @include project-overview;
+        .button-container {
+          @include cta-button(#D92118);
           .btn:hover {
             box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
           }
