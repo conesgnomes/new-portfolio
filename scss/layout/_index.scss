@@ -13,6 +13,10 @@
     justify-content: center;
     .social-item {
       padding: 0 15px;
+      transition: color 0.2s ease-in;
+      &:hover {
+        color: #000000;
+      }
       @media #{$breakpoint-medium} {
         padding: 0 25px;
       }
@@ -21,12 +25,11 @@
 }
 .index-body {
   .project-left {
-    margin-top: 75px;
+    margin-top: 50px;
     @media #{$breakpoint-medium} {
       padding-left: 75px;
     }
     @media #{$breakpoint-xlarge} {
-      margin-top: 150px;
       padding-left: 150px;
     }
     .afrikan-clothing-co {
@@ -59,12 +62,11 @@
     }
   }
   .project-right {
-    margin-top: 75px;
+    margin-top: 50px;
     @media #{$breakpoint-medium} {
       padding-right: 75px;
     }
     @media #{$breakpoint-xlarge} {
-      margin-top: 150px;
       padding-right: 150px;
     }
     .sq1-raffle {
@@ -89,6 +91,124 @@
         @include project-overview;
         .button-container {
           @include cta-button(#D92118);
+          .btn:hover {
+            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .project-left {
+    margin-top: 50px;
+    @media #{$breakpoint-medium} {
+      padding-left: 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding-left: 150px;
+    }
+    .givemo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row-reverse;
+      }
+      .project-image {
+        width: 100%;
+        @media #{$breakpoint-medium} {
+          width: 60%;
+        }
+        img {
+          object-fit: contain;
+          width: 100%;
+          height: 300px;
+          @media #{$breakpoint-medium} {
+            height: 400px;
+          }
+          @media #{$breakpoint-large} {
+            height: 450px;
+          }
+        }
+      }
+      .project-text {
+        @include project-overview;
+        .button-container {
+          @include cta-button(#06AED5);
+          .btn:hover {
+            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .project-right {
+    margin-top: 50px;
+    @media #{$breakpoint-medium} {
+      padding-right: 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding-right: 150px;
+    }
+    .catspot {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row;
+      }
+      .project-image {
+        width: 100%;
+        @media #{$breakpoint-medium} {
+          width: 60%;
+        }
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      .project-text {
+        @include project-overview;
+        .button-container {
+          @include cta-button(#8EC343);
+          .btn:hover {
+            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .project-left {
+    margin-top: 50px;
+    @media #{$breakpoint-medium} {
+      padding-left: 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding-left: 150px;
+    }
+    .digital-gaming-museum {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row-reverse;
+      }
+      .project-image {
+        width: 100%;
+        @media #{$breakpoint-medium} {
+          width: 60%;
+        }
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      .project-text {
+        @include project-overview;
+        .button-container {
+          @include cta-button(#89BCA9);
           .btn:hover {
             box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
           }
