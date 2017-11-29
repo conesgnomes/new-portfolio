@@ -1,6 +1,10 @@
 .bio-body {
+  margin-top: 125px;
   @media #{$breakpoint-medium} {
     padding: 0 75px;
+  }
+  @media #{$breakpoint-large} {
+    // margin-top: 200px;
   }
   @media #{$breakpoint-xlarge} {
     padding: 0 150px;
