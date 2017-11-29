@@ -83,6 +83,9 @@
 }
 .acc-research {
   margin-top: 60px;
+  @media #{$breakpoint-large} {
+    margin-top: 100px;
+  }
   .acc-research-text {
     @media #{$breakpoint-medium} {
       padding: 0 75px;
@@ -175,7 +178,10 @@
   }
 }
 .acc-website-overview {
-  margin-top: 100px;
+  margin-top: 60px;
+  @media #{$breakpoint-large} {
+    margin-top: 100px;
+  }
   h1 {
     margin-bottom: 35px;
     @media #{$breakpoint-medium} {

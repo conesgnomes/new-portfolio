@@ -21,7 +21,10 @@
   .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    @media #{$breakpoint-large} {
+      margin-top: 75px;
+    }
     @include cta-button(#000000);
     .btn:hover {
       box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
