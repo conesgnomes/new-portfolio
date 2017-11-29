@@ -82,11 +82,26 @@ p {
   font-family: "lato-black";
   text-transform: uppercase;
   font-size: 30px;
+  // @media #{$breakpoint-small} {
+  //   font-size: 22px;
+  // }
   @media #{$breakpoint-large} {
     font-size: 38px;
   }
-  @media #{$breakpoint-large} {
+  @media #{$breakpoint-xlarge} {
     font-size: 48px;
+  }
+}
+
+.subtitle {
+  font-family: "lato-regular";
+  color: #999999;
+  font-size: 15px;
+  @media #{$breakpoint-large} {
+    font-size: 19px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 24px;
   }
 }
 
