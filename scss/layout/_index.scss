@@ -4,7 +4,7 @@
     padding: 0 75px;
   }
   @media #{$breakpoint-large} {
-    margin-top: 200px;    
+    margin-top: 200px;
   }
   @media #{$breakpoint-xlarge} {
     padding: 0 150px;
@@ -59,7 +59,7 @@
         .button-container {
           @include cta-button(#EF9501);
           .btn:hover {
-            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
           }
         }
       }
@@ -96,7 +96,7 @@
         .button-container {
           @include cta-button(#D92118);
           .btn:hover {
-            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
           }
         }
       }
@@ -140,7 +140,7 @@
         .button-container {
           @include cta-button(#06AED5);
           .btn:hover {
-            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
           }
         }
       }
@@ -177,7 +177,7 @@
         .button-container {
           @include cta-button(#8EC343);
           .btn:hover {
-            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
           }
         }
       }
@@ -214,7 +214,7 @@
         .button-container {
           @include cta-button(#89BCA9);
           .btn:hover {
-            box-shadow: -7px 12px 17px rgba(0, 0, 0, 0.5);
+            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
           }
         }
       }
