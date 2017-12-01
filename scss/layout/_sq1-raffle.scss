@@ -1,4 +1,4 @@
-.sq1-raffle-header {
+.raffle-header {
   margin-top: 115px;
   text-align: center;
   @media #{$breakpoint-large} {
@@ -8,19 +8,19 @@
     margin-bottom: 10px;
   }
 }
-.sq1-raffle-overview {
+.raffle-overview {
   margin-top: 65px;
   @media #{$breakpoint-large} {
     margin-top: 100px;
   }
-  .sq1-raffle-overview-text {
+  .raffle-overview-text {
     @media #{$breakpoint-medium} {
       padding: 0 75px;
     }
     @media #{$breakpoint-xlarge} {
       padding: 0 150px;
     }
-    .sq1-raffle-overview-overview {
+    .raffle-overview-overview {
       margin-bottom: 35px;
       @media #{$breakpoint-large} {
         margin-bottom: 50px;
@@ -32,7 +32,7 @@
         margin-bottom: 20px;
       }
     }
-    .sq1-raffle-overview-problem {
+    .raffle-overview-problem {
       margin-bottom: 35px;
       @media #{$breakpoint-large} {
         margin-bottom: 50px;
@@ -41,34 +41,221 @@
         margin-bottom: 20px;
       }
     }
-    .sq1-raffle-overview-solution {
-      margin-bottom: 35px;
-      @media #{$breakpoint-large} {
-        margin-bottom: 50px;
-      }
+    .raffle-overview-solution {
       h2 {
         margin-bottom: 20px;
       }
     }
   }
-  .sq1-raffle-img1 {
-    width: 100%;
-    margin-top: -50px;
+  .raffle-img1 {
+    margin-top: 35px;
     @media #{$breakpoint-medium} {
-      margin-top: -100px;
+      padding: 0 75px;
+    }
+    @media #{$breakpoint-large} {
+      margin-top: 50px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 150px;
     }
     img {
       object-fit: contain;
       width: 100%;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
     }
   }
 }
-.study-coming-soon {
+.raffle-research {
+  margin-top: 60px;
   @media #{$breakpoint-medium} {
     padding: 0 75px;
   }
+  @media #{$breakpoint-large} {
+    margin-top: 100px;
+  }
   @media #{$breakpoint-xlarge} {
     padding: 0 150px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin: 50px 0 20px 0;
+  }
+  .raffle-user-stories {
+    margin: 20px 0 50px 0;
+    h2 {
+      margin-bottom: 20px;
+    }
+    .user-story-subhead {
+      margin-bottom: 5px;
+    }
+    ul {
+      padding-left: 25px;
+      margin-bottom: 20px;
+    }
+  }
+  .website-goal-text {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+.raffle-website-overview {
+  margin-top: 60px;
+  @media #{$breakpoint-large} {
+    margin-top: 100px;
+  }
+  h1 {
+    margin-bottom: 35px;
+    @media #{$breakpoint-medium} {
+      padding: 0 75px;
+    }
+    @media #{$breakpoint-large} {
+      margin-bottom: 50px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 150px;
+    }
+  }
+  .mockup-overview-group {
+    h2 {
+      margin-bottom: 35px;
+      @media #{$breakpoint-medium} {
+        padding: 0 75px;
+      }
+      @media #{$breakpoint-large} {
+        margin-bottom: 50px;
+      }
+      @media #{$breakpoint-xlarge} {
+        padding: 0 150px;
+      }
+      &:nth-of-type(2),
+      &:nth-of-type(3),
+      &:nth-of-type(4),
+      &:nth-of-type(5) {
+        margin-top: 50px;
+        @media #{$breakpoint-large} {
+          margin-top: 75px;
+        }
+      }
+    }
+    .raffle-overview {
+      width: 100%;
+      margin-top: -15px;
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+  .ux-text {
+    margin-top: 60px;
+    @media #{$breakpoint-medium} {
+      padding: 0 75px;
+    }
+    @media #{$breakpoint-large} {
+      margin-top: 100px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 150px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  .user-flow-group {
+    margin-top: 35px;
+    @media #{$breakpoint-large} {
+      margin-top: 50px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      @media #{$breakpoint-medium} {
+        padding: 0 75px;
+      }
+      @media #{$breakpoint-xlarge} {
+        padding: 0 150px;
+      }
+    }
+    .user-flow {
+      width: 100%;
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+  .ui-group {
+    margin-top: 35px;
+    @media #{$breakpoint-medium} {
+      padding: 0 75px;
+    }
+    @media #{$breakpoint-large} {
+      margin-top: 50px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 150px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .raffle-colors {
+      margin-top: 35px;
+      display: flex;
+      @media #{$breakpoint-large} {
+        margin-top: 50px;
+      }
+      .raffle-color-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        @media #{$breakpoint-medium} {
+          padding: 0 30px;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+        .raffle-color {
+          width: 100%;
+          img {
+            object-fit: contain;
+            width: 100%;
+            border-radius: 100%;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+    .raffle-font-ticket-group {
+      margin-top: 35px;
+      display: flex;
+      flex-wrap: nowrap;
+      @media #{$breakpoint-large} {
+        margin-top: 50px;
+      }
+      .raffle-font {
+        width: 45%;
+        margin-right: 20px;
+        p {
+          word-wrap: break-word;
+          font-family: "playfair-display-reg";
+          font-size: 22px;
+          line-height: 30px;
+          @media #{$breakpoint-large} {
+            font-size: 32px;
+            line-height: 40px;
+          }
+          &:last-of-type {
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
   }
 }
 .sq1-raffle-button-container {
