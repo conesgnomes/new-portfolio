@@ -233,17 +233,22 @@
     }
     .raffle-font-ticket-group {
       margin-top: 35px;
-      display: flex;
-      flex-wrap: nowrap;
+      @media #{$breakpoint-medium} {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
       @media #{$breakpoint-large} {
         margin-top: 50px;
       }
       .raffle-font {
-        width: 45%;
         margin-right: 20px;
+        @media #{$breakpoint-medium} {
+          width: 50%;
+        }
         p {
           word-wrap: break-word;
-          font-family: "playfair-display-reg";
+          font-family: "arial";
           font-size: 22px;
           line-height: 30px;
           @media #{$breakpoint-large} {
@@ -255,10 +260,27 @@
           }
         }
       }
+      .raffle-ticket {
+        padding: 50px;
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
     }
   }
 }
-.sq1-raffle-button-container {
+.raffle-desktop {
+  width: 100%;
+  @media #{$breakpoint-medium} {
+    margin-top: -50px;
+  }
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+.raffle-button-container {
   display: flex;
   justify-content: center;
   margin-top: 50px;

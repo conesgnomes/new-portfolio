@@ -17,6 +17,12 @@
   }
   p {
     margin-bottom: 20px;
+    a {
+      text-decoration: none;
+      border-bottom: solid #000000 1px;
+      padding-bottom: 1px;
+      color: #000000;
+    }
   }
   .button-container {
     display: flex;

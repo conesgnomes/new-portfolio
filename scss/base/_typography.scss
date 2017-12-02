@@ -29,10 +29,10 @@ h2 {
 
 h3 {
   font-family: "lato-regular";
-  font-size: 13px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   @media #{$breakpoint-large} {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
   }
   @media #{$breakpoint-xlarge} {
@@ -56,15 +56,15 @@ h4 {
 
 p {
   font-family: "lato-regular";
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 19px;
   @media #{$breakpoint-large} {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 20px;
   }
   @media #{$breakpoint-xlarge} {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
