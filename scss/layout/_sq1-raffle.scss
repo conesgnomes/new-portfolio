@@ -206,6 +206,7 @@
     .raffle-colors {
       margin-top: 35px;
       display: flex;
+      justify-content: center;
       @media #{$breakpoint-large} {
         margin-top: 50px;
       }

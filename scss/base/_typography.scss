@@ -92,8 +92,11 @@ p {
 .title {
   font-family: "lato-black";
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 27px;
   line-height: 30px;
+  @media #{$breakpoint-medium} {
+    font-size: 30px;
+  }
   @media #{$breakpoint-large} {
     font-size: 38px;
   }

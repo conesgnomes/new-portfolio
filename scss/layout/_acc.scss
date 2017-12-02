@@ -106,6 +106,7 @@
   .acc-persona-group {
     @media #{$breakpoint-medium} {
       display: flex;
+      justify-content: center;
     }
     .persona {
       margin-bottom: 50px;
@@ -256,6 +257,7 @@
     .acc-colors {
       margin-top: 35px;
       display: flex;
+      justify-content: center;
       @media #{$breakpoint-large} {
         margin-top: 50px;
       }
@@ -394,6 +396,7 @@
       margin-top: 35px;
       @media #{$breakpoint-medium} {
         display: flex;
+        justify-content: center;
       }
       @media #{$breakpoint-large} {
         margin-top: 50px;
@@ -425,14 +428,15 @@
   }
   .products-page-vid {
     margin-top: 35px;
-    display: flex;
-    justify-content: center;
+    display: none;
     @media #{$breakpoint-medium} {
-      margin-top: 50px;
-      padding: 0 75px;
+      display: flex;
+      justify-content: center;
+      margin: 50px 75px 0 75px;
+      max-height: 600px;
     }
     @media #{$breakpoint-xlarge} {
-      padding: 0 150px;
+      margin: 50px 150px 0 150px;
     }
     video {
       width: 100%;
