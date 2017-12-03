@@ -121,6 +121,16 @@ p {
   font-family: "lato-bold";
 }
 
+.circle-brand-title {
+  font-family: "lato-regular";
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 14px;
+  @media #{$breakpoint-large} {
+    font-size: 16px;
+  }
+}
+
 .color-title {
   font-family: "lato-regular";
   text-transform: uppercase;
@@ -130,6 +140,7 @@ p {
     font-size: 16px;
   }
 }
+
 .fabric-title {
   font-family: "lato-regular";
   text-transform: uppercase;
