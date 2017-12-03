@@ -110,7 +110,7 @@
     @media #{$breakpoint-xlarge} {
       padding-left: 150px;
     }
-    .givemo {
+    .circle {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -120,6 +120,49 @@
       }
       .project-image {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 50px 0 30px 0;
+        @media #{$breakpoint-medium} {
+          width: 60%;
+        }
+        img {
+          object-fit: contain;
+          width: 80%;
+        }
+      }
+      .project-text {
+        @include project-overview;
+        .button-container {
+          @include cta-button(#205F98);
+          .btn:hover {
+            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .project-right {
+    margin-top: 50px;
+    @media #{$breakpoint-medium} {
+      padding-right: 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding-right: 150px;
+    }
+    .givemo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row;
+      }
+      .project-image {
+        width: 100%;
+        margin-bottom: 30px;
         @media #{$breakpoint-medium} {
           width: 60%;
         }
