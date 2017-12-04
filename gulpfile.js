@@ -11,6 +11,7 @@ var jshint = require('gulp-jshint'); //to use linting, correct sintax
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 
 var lib = require('bower-files')();
 // USE THIS INSTEAD FOR LIB IF YOU INSTALL BOOTSTRAP
@@ -114,6 +115,8 @@ gulp.task('cssBuild', function() {
   return gulp.src(['scss/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass())
+    // auto prefix and keep last two browser versions
+    .pipe(autoprefixer('last 2 version'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream());
