@@ -206,46 +206,59 @@
     .givemo-colors {
       margin-top: 35px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: flex-end;
+      @media #{$breakpoint-medium} {
+        flex-direction: row;
+      }
       @media #{$breakpoint-large} {
         margin-top: 50px;
       }
-      .givemo-color-group {
+      .givemo-three-color-group {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 15px;
-        @media #{$breakpoint-medium} {
-          padding: 0 30px;
-        }
-        p {
-          margin-bottom: 10px;
-        }
-        .givemo-color {
-          width: 100%;
-          img {
-            object-fit: contain;
+        align-items: flex-end;
+        margin-bottom: 20px;
+        .givemo-color-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 10px;
+          @media #{$breakpoint-medium} {
+            padding: 0 20px;
+          }
+          p {
+            margin-bottom: 10px;
+          }
+          .givemo-color {
             width: 100%;
-            border-radius: 100%;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+            img {
+              object-fit: contain;
+              width: 100%;
+              border-radius: 100%;
+              box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+            }
           }
         }
       }
     }
-    .acc-fonts-group {
+    .givemo-fonts-group {
       margin-top: 35px;
-      display: flex;
       flex-wrap: nowrap;
+      @media #{$breakpoint-medium} {
+        display: flex;
+        justify-content: center;
+      }
       @media #{$breakpoint-large} {
         margin-top: 50px;
       }
-      .acc-font1 {
-        width: 45%;
-        margin-right: 20px;
+      .givemo-font1 {
+        width: 100%;
+        @media #{$breakpoint-medium} {
+          width: 30%;
+        }
         p {
           word-wrap: break-word;
-          font-family: "playfair-display-reg";
+          font-family: "oleo";
           font-size: 22px;
           line-height: 30px;
           @media #{$breakpoint-large} {
@@ -257,16 +270,42 @@
           }
         }
       }
-      .acc-font2 {
-        width: 45%;
-        margin-left: 20px;
+      .givemo-font2 {
+        width: 100%;
+        margin-top: 20px;
+        @media #{$breakpoint-medium} {
+          width: 30%;
+          margin-top: 0;
+          padding: 0 40px;
+        }
         p {
           word-wrap: break-word;
-          font-family: "source-sans-pro-reg";
+          font-family: "catamaran";
           font-size: 22px;
           line-height: 30px;
           @media #{$breakpoint-large} {
-            font-size: 32px;
+            font-size: 30px;
+            line-height: 40px;
+          }
+          &:last-of-type {
+            letter-spacing: 3px;
+          }
+        }
+      }
+      .givemo-font3 {
+        width: 100%;
+        margin-top: 20px;
+        @media #{$breakpoint-medium} {
+          width: 30%;
+          margin-top: 0;
+        }
+        p {
+          word-wrap: break-word;
+          font-family: "lato-regular";
+          font-size: 22px;
+          line-height: 30px;
+          @media #{$breakpoint-large} {
+            font-size: 30px;
             line-height: 40px;
           }
           &:last-of-type {
@@ -276,7 +315,7 @@
       }
     }
   }
-  .acc-img1 {
+  .givemo-prototype {
     width: 100%;
     @media #{$breakpoint-medium} {
       margin-top: -50px;
@@ -285,6 +324,9 @@
       object-fit: contain;
       width: 100%;
     }
+  }
+  .browser-resize {
+
   }
   .givemo-button-container {
     display: flex;
