@@ -48,12 +48,12 @@
 }
 
 @mixin project-overview {
-  max-width: 400px;
+  max-width: 550px;
   h3 {
     margin: 10px 0 20px 0;
     max-width: 250px;
     @media #{$breakpoint-xlarge} {
-      max-width: 400px;
+      max-width: 450px;
     }
   }
 }

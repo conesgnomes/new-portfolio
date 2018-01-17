@@ -73,15 +73,15 @@
   .project-right {
     margin-top: 50px;
     @media #{$breakpoint-medium} {
-      padding-right: 75px;
+      padding-left: 75px;
     }
     @media #{$breakpoint-xlarge} {
-      padding-right: 150px;
+      padding-left: 150px;
     }
-    .sq1-raffle {
+    .afrikan-clothing-co {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       @media #{$breakpoint-medium} {
         flex-direction: row;
@@ -90,6 +90,7 @@
         width: 100%;
         @media #{$breakpoint-medium} {
           width: 60%;
+          margin-right: 50px;
         }
         img {
           object-fit: contain;
@@ -99,7 +100,7 @@
       .project-text {
         @include project-overview;
         .button-container {
-          @include cta-button(#D92118);
+          @include cta-button(#EF9501);
         }
       }
     }
@@ -107,12 +108,12 @@
   .project-left {
     margin-top: 50px;
     @media #{$breakpoint-medium} {
-      padding-left: 75px;
+      padding-right: 75px;
     }
     @media #{$breakpoint-xlarge} {
-      padding-left: 150px;
+      padding-right: 150px;
     }
-    .afrikan-clothing-co {
+    .sq1-raffle {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -133,11 +134,12 @@
       .project-text {
         @include project-overview;
         .button-container {
-          @include cta-button(#EF9501);
+          @include cta-button(#D92118);
         }
       }
     }
   }
+
   .project-right {
     margin-top: 50px;
     @media #{$breakpoint-medium} {
