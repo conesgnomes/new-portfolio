@@ -473,8 +473,5 @@
     justify-content: center;
     margin-top: 50px;
     @include cta-button(#EF9501);
-    .btn:hover {
-      box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-    }
   }
 }

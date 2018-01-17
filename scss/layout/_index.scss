@@ -36,7 +36,7 @@
     @media #{$breakpoint-xlarge} {
       padding-left: 150px;
     }
-    .afrikan-clothing-co {
+    .givemo {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -46,21 +46,26 @@
       }
       .project-image {
         width: 100%;
+        margin-bottom: 30px;
         @media #{$breakpoint-medium} {
           width: 60%;
         }
         img {
           object-fit: contain;
           width: 100%;
+          height: 300px;
+          @media #{$breakpoint-medium} {
+            height: 400px;
+          }
+          @media #{$breakpoint-large} {
+            height: 450px;
+          }
         }
       }
       .project-text {
         @include project-overview;
         .button-container {
-          @include cta-button(#EF9501);
-          .btn:hover {
-            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-          }
+          @include cta-button(#06AED5);
         }
       }
     }
@@ -95,9 +100,6 @@
         @include project-overview;
         .button-container {
           @include cta-button(#D92118);
-          .btn:hover {
-            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-          }
         }
       }
     }
@@ -110,7 +112,7 @@
     @media #{$breakpoint-xlarge} {
       padding-left: 150px;
     }
-    .givemo {
+    .afrikan-clothing-co {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -120,29 +122,18 @@
       }
       .project-image {
         width: 100%;
-        margin-bottom: 30px;
         @media #{$breakpoint-medium} {
           width: 60%;
         }
         img {
           object-fit: contain;
           width: 100%;
-          height: 300px;
-          @media #{$breakpoint-medium} {
-            height: 400px;
-          }
-          @media #{$breakpoint-large} {
-            height: 450px;
-          }
         }
       }
       .project-text {
         @include project-overview;
         .button-container {
-          @include cta-button(#06AED5);
-          .btn:hover {
-            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-          }
+          @include cta-button(#EF9501);
         }
       }
     }
@@ -182,9 +173,6 @@
         @include project-overview;
         .button-container {
           @include cta-button(#205F98);
-          .btn:hover {
-            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-          }
         }
       }
     }

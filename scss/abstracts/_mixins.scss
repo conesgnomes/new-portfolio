@@ -1,23 +1,47 @@
 @mixin cta-button($button-color) {
   .btn {
-    background-color: $button-color;
     border-radius: 100px;
+    border: 2px solid $button-color;
     display: inline-block;
-    box-shadow: -10px 15px 20px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.3s ease-in-out;
     padding: 8px 20px;
+    position: relative;
+    overflow: hidden;
     @media #{$breakpoint-medium} {
       padding: 10px 30px;
     }
     a {
       font-family: "lato-black";
       text-transform: uppercase;
-      color: #ffffff;
+      color: $button-color;
       text-decoration: none;
       font-size: 10px;
       letter-spacing: 2px;
+      position: relative;
+      transition: color 150ms;
       @media #{$breakpoint-medium} {
         font-size: 12px;
+      }
+    }
+    &:before {
+      content:'';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    &:before {
+      transform: translate3d(0, 100%, 0);
+      background-color: $button-color;
+      transition: transform 150ms ease-in-out;
+    }
+    &:hover {
+      &:before {
+        transform: translate3d(0, 0, 0);
+      }
+      > a {
+        color: #FFFFFF;
       }
     }
   }
