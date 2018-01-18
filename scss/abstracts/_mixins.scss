@@ -36,13 +36,15 @@
       background-color: $button-color;
       transition: transform 150ms ease-in-out;
     }
-    &:hover {
-      &:before {
-        transform: translate3d(0, 0, 0);
-      }
-      > a {
-        color: #FFFFFF;
-      }
+    @media #{$breakpoint-large} {
+      &:hover {
+        &:before {
+          transform: translate3d(0, 0, 0);
+        }
+        > a {
+          color: #FFFFFF;
+        }
+      }      
     }
   }
 }
