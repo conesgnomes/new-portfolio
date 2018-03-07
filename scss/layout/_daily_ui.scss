@@ -71,6 +71,12 @@
     .daily-challenge-design {
       width: 50%;
       margin: 20px auto 0 auto;
+      @media #{$breakpoint-large} {
+        width: 35%;
+      }
+      @media #{$breakpoint-xlarge} {
+        width: 25%;
+      }
       img {
         object-fit: contain;
         width: 100%;
