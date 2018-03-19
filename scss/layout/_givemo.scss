@@ -180,8 +180,14 @@
       }
     }
     .givemo-overview {
+      margin: -15px auto 0 auto;
       width: 100%;
-      margin-top: -15px;
+      @media #{$breakpoint-medium} {        
+        width: 80%;
+      }
+      @media #{$breakpoint-large} {
+        width: 60%;
+      }
       img {
         object-fit: contain;
         width: 100%;
