@@ -182,7 +182,7 @@
     .givemo-overview {
       margin: -15px auto 0 auto;
       width: 100%;
-      @media #{$breakpoint-medium} {        
+      @media #{$breakpoint-medium} {
         width: 80%;
       }
       @media #{$breakpoint-large} {
@@ -363,6 +363,6 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    @include cta-button(#06AED5);
+    @include cta-button(#6DBE99);
   }
 }

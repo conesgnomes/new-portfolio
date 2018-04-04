@@ -30,6 +30,7 @@
 .index-body {
   .project-left {
     margin-top: 50px;
+    width: 80%;
     @media #{$breakpoint-medium} {
       padding-left: 75px;
     }
@@ -48,7 +49,7 @@
         width: 100%;
         margin-bottom: 30px;
         @media #{$breakpoint-medium} {
-          width: 60%;
+          width: 40%;
         }
         img {
           object-fit: contain;
@@ -69,6 +70,43 @@
   }
   .project-right {
     margin-top: 50px;
+    width: 80%;
+    @media #{$breakpoint-medium} {
+      padding-left: 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding-left: 150px;
+    }
+    .booth {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row;
+      }
+      .project-image {
+        width: 100%;
+        @media #{$breakpoint-medium} {
+          width: 40%;
+          margin-right: 50px;
+        }
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      .project-text {
+        @include project-overview;
+        .button-container {
+          @include cta-button(#1793C3);
+        }
+      }
+    }
+  }
+  .project-left {
+    margin-top: 50px;
+    width: 80%;
     @media #{$breakpoint-medium} {
       padding-left: 75px;
     }
@@ -81,14 +119,13 @@
       justify-content: center;
       align-items: center;
       @media #{$breakpoint-medium} {
-        flex-direction: row;
+        flex-direction: row-reverse;
       }
       .project-image {
         width: 100%;
         margin-bottom: 30px;
         @media #{$breakpoint-medium} {
-          width: 60%;
-          margin-right: 100px;
+          width: 50%;
         }
         img {
           object-fit: contain;
@@ -102,13 +139,14 @@
       .project-text {
         @include project-overview;
         .button-container {
-          @include cta-button(#06AED5);
+          @include cta-button(#6DBE99);
         }
       }
     }
   }
-  .project-left {
+  .project-right {
     margin-top: 50px;
+    width: 80%;
     @media #{$breakpoint-medium} {
       padding-left: 75px;
     }
@@ -121,12 +159,12 @@
       justify-content: space-around;
       align-items: center;
       @media #{$breakpoint-medium} {
-        flex-direction: row-reverse;
+        flex-direction: row;
       }
       .project-image {
         width: 100%;
         @media #{$breakpoint-medium} {
-          width: 60%;
+          width: 40%;
           margin-right: 50px;
         }
         img {
@@ -142,8 +180,9 @@
       }
     }
   }
-  .project-right {
+  .project-left {
     margin-top: 50px;
+    width: 80%;
     @media #{$breakpoint-medium} {
       padding-right: 75px;
     }
@@ -156,7 +195,7 @@
       justify-content: center;
       align-items: center;
       @media #{$breakpoint-medium} {
-        flex-direction: row;
+        flex-direction: row-reverse;
       }
       .project-image {
         width: 100%;
