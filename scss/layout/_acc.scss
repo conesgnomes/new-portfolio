@@ -67,9 +67,9 @@
   }
   .acc-img1 {
     width: 100%;
-    margin-top: -50px;
+    margin-bottom: 35px;
     @media #{$breakpoint-medium} {
-      margin-top: -100px;
+      margin-top: -50px;
     }
     img {
       object-fit: contain;
