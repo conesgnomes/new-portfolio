@@ -196,7 +196,7 @@
       .project-image {
         width: 100%;
         @media #{$breakpoint-medium} {
-          width: 60%;
+          width: 50%;
         }
         img {
           object-fit: contain;
