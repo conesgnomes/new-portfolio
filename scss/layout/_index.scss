@@ -29,14 +29,14 @@
 }
 .index-body {
   .project-left {
-    margin-top: 50px;
-    @media #{$breakpoint-medium} {
-      padding-left: 75px;
-    }
-    @media #{$breakpoint-xlarge} {
-      padding-left: 150px;
-    }
+    // @media #{$breakpoint-medium} {
+    //   padding-left: 75px;
+    // }
+    // @media #{$breakpoint-xlarge} {
+    //   padding-left: 150px;
+    // }
     .daily { // Styling for Phone only img
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -70,14 +70,14 @@
     }
   }
   .project-right {
-    margin-top: 50px;
-    @media #{$breakpoint-medium} {
-      // padding-right: 75px;
-    }
-    @media #{$breakpoint-xlarge} {
-      // padding-left: 150px;
-    }
+    // @media #{$breakpoint-medium} {
+    //   padding-right: 75px;
+    // }
+    // @media #{$breakpoint-xlarge} {
+    //   padding-left: 150px;
+    // }
     .booth { // Styling for Laptop and Phone img
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -104,14 +104,14 @@
     }
   }
   .project-left {
-    margin-top: 50px;
-    @media #{$breakpoint-medium} {
-      padding-left: 75px;
-    }
-    @media #{$breakpoint-xlarge} {
-      padding-left: 150px;
-    }
-    .givemo {
+    // @media #{$breakpoint-medium} {
+    //   padding-left: 75px;
+    // }
+    // @media #{$breakpoint-xlarge} {
+    //   padding-left: 150px;
+    // }
+    .rrg {
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -120,8 +120,42 @@
       }
       .project-image {
         width: 100%;
-        margin-bottom: 30px;
         @media #{$breakpoint-medium} {
+          width: 70%;
+        }
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      .project-text {
+        margin-left: 50px;
+        @include project-overview;
+        .button-container {
+          @include cta-button(#752929);
+        }
+      }
+    }
+  }
+  .project-right {
+    // @media #{$breakpoint-medium} {
+    //   padding-left: 75px;
+    // }
+    // @media #{$breakpoint-xlarge} {
+    //   padding-left: 150px;
+    // }
+    .givemo {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row;
+      }
+      .project-image {
+        width: 100%;
+        @media #{$breakpoint-medium} {
+          margin-right: 50px;
           width: 40%;
         }
         img {
@@ -144,26 +178,25 @@
       }
     }
   }
-  .project-right {
-    margin-top: 50px;
-    @media #{$breakpoint-medium} {
-      padding-left: 75px;
-    }
-    @media #{$breakpoint-xlarge} {
-      padding-left: 150px;
-    }
+  .project-left {
+    // @media #{$breakpoint-medium} {
+    //   padding-left: 75px;
+    // }
+    // @media #{$breakpoint-xlarge} {
+    //   padding-left: 150px;
+    // }
     .afrikan-clothing-co {
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
       @media #{$breakpoint-medium} {
-        flex-direction: row;
+        flex-direction: row-reverse;
       }
       .project-image {
         width: 100%;
         @media #{$breakpoint-medium} {
           width: 60%;
-          margin-right: 50px;
         }
         img {
           object-fit: contain;
@@ -172,156 +205,157 @@
       }
       .project-text {
         @include project-overview;
+        margin-left: 50px;
         .button-container {
           @include cta-button(#EF9501);
         }
       }
     }
   }
-  .project-left {
-    margin-top: 50px;
-    @media #{$breakpoint-medium} {
-      padding-right: 75px;
-    }
-    @media #{$breakpoint-xlarge} {
-      padding-right: 150px;
-    }
-    .sq1-raffle {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media #{$breakpoint-medium} {
-        flex-direction: row-reverse;
-      }
-      .project-image {
-        width: 100%;
-        @media #{$breakpoint-medium} {
-          width: 50%;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-        }
-      }
-      .project-text {
-        @include project-overview;
-        .button-container {
-          @include cta-button(#D92118);
-        }
-      }
-    }
-  }
-  .project-left {
-    margin-top: 50px;
-    @media #{$breakpoint-medium} {
-      padding-right: 75px;
-    }
-    @media #{$breakpoint-xlarge} {
-      padding-right: 150px;
-    }
-    .circle {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      @media #{$breakpoint-medium} {
-        flex-direction: row-reverse;
-      }
-      .project-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin: 50px 0 30px 0;
-        @media #{$breakpoint-medium} {
-          width: 60%;
-        }
-        img {
-          object-fit: contain;
-          width: 80%;
-        }
-      }
-      .project-text {
-        @include project-overview;
-        .button-container {
-          @include cta-button(#205F98);
-        }
-      }
-    }
-  }
-  .project-right {
-    margin-top: 50px;
-    @media #{$breakpoint-medium} {
-      padding-right: 75px;
-    }
-    @media #{$breakpoint-xlarge} {
-      padding-right: 150px;
-    }
-    .catspot {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      @media #{$breakpoint-medium} {
-        flex-direction: row;
-      }
-      .project-image {
-        width: 100%;
-        @media #{$breakpoint-medium} {
-          width: 60%;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-        }
-      }
-      .project-text {
-        @include project-overview;
-        .button-container {
-          @include cta-button(#8EC343);
-          .btn:hover {
-            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-          }
-        }
-      }
-    }
-  }
-  .project-left {
-    margin-top: 50px;
-    @media #{$breakpoint-medium} {
-      padding-left: 75px;
-    }
-    @media #{$breakpoint-xlarge} {
-      padding-left: 150px;
-    }
-    .digital-gaming-museum {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      @media #{$breakpoint-medium} {
-        flex-direction: row-reverse;
-      }
-      .project-image {
-        width: 100%;
-        @media #{$breakpoint-medium} {
-          width: 60%;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-        }
-      }
-      .project-text {
-        @include project-overview;
-        .button-container {
-          @include cta-button(#89BCA9);
-          .btn:hover {
-            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-          }
-        }
-      }
-    }
-  }
+  // .project-left {
+  //   margin-top: 50px;
+  //   @media #{$breakpoint-medium} {
+  //     padding-right: 75px;
+  //   }
+  //   @media #{$breakpoint-xlarge} {
+  //     padding-right: 150px;
+  //   }
+  //   .sq1-raffle {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     @media #{$breakpoint-medium} {
+  //       flex-direction: row-reverse;
+  //     }
+  //     .project-image {
+  //       width: 100%;
+  //       @media #{$breakpoint-medium} {
+  //         width: 50%;
+  //       }
+  //       img {
+  //         object-fit: contain;
+  //         width: 100%;
+  //       }
+  //     }
+  //     .project-text {
+  //       @include project-overview;
+  //       .button-container {
+  //         @include cta-button(#D92118);
+  //       }
+  //     }
+  //   }
+  // }
+  // .project-left {
+  //   margin-top: 50px;
+  //   @media #{$breakpoint-medium} {
+  //     padding-right: 75px;
+  //   }
+  //   @media #{$breakpoint-xlarge} {
+  //     padding-right: 150px;
+  //   }
+  //   .circle {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     @media #{$breakpoint-medium} {
+  //       flex-direction: row-reverse;
+  //     }
+  //     .project-image {
+  //       width: 100%;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       height: 100%;
+  //       margin: 50px 0 30px 0;
+  //       @media #{$breakpoint-medium} {
+  //         width: 60%;
+  //       }
+  //       img {
+  //         object-fit: contain;
+  //         width: 80%;
+  //       }
+  //     }
+  //     .project-text {
+  //       @include project-overview;
+  //       .button-container {
+  //         @include cta-button(#205F98);
+  //       }
+  //     }
+  //   }
+  // }
+  // .project-right {
+  //   margin-top: 50px;
+  //   @media #{$breakpoint-medium} {
+  //     padding-right: 75px;
+  //   }
+  //   @media #{$breakpoint-xlarge} {
+  //     padding-right: 150px;
+  //   }
+  //   .catspot {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     @media #{$breakpoint-medium} {
+  //       flex-direction: row;
+  //     }
+  //     .project-image {
+  //       width: 100%;
+  //       @media #{$breakpoint-medium} {
+  //         width: 60%;
+  //       }
+  //       img {
+  //         object-fit: contain;
+  //         width: 100%;
+  //       }
+  //     }
+  //     .project-text {
+  //       @include project-overview;
+  //       .button-container {
+  //         @include cta-button(#8EC343);
+  //         .btn:hover {
+  //           box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .project-left {
+  //   margin-top: 50px;
+  //   @media #{$breakpoint-medium} {
+  //     padding-left: 75px;
+  //   }
+  //   @media #{$breakpoint-xlarge} {
+  //     padding-left: 150px;
+  //   }
+  //   .digital-gaming-museum {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     @media #{$breakpoint-medium} {
+  //       flex-direction: row-reverse;
+  //     }
+  //     .project-image {
+  //       width: 100%;
+  //       @media #{$breakpoint-medium} {
+  //         width: 60%;
+  //       }
+  //       img {
+  //         object-fit: contain;
+  //         width: 100%;
+  //       }
+  //     }
+  //     .project-text {
+  //       @include project-overview;
+  //       .button-container {
+  //         @include cta-button(#89BCA9);
+  //         .btn:hover {
+  //           box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
