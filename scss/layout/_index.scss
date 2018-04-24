@@ -48,6 +48,8 @@
         margin-bottom: 30px;
         @media #{$breakpoint-medium} {
           width: 40%;
+          margin-right: 50px;
+          margin-left: 50px;
         }
         img {
           object-fit: contain;
@@ -90,6 +92,11 @@
           width: 70%;
           margin-right: 50px;
         }
+        @media #{$breakpoint-large} {
+          width: 40%;
+          margin-right: 100px;
+          margin-left: 100px;
+        }
         img {
           object-fit: contain;
           width: 100%;
@@ -122,6 +129,10 @@
         width: 100%;
         @media #{$breakpoint-medium} {
           width: 70%;
+        }
+        @media #{$breakpoint-large} {
+          width: 45%;
+          margin-left: 100px;
         }
         img {
           object-fit: contain;
@@ -157,6 +168,9 @@
         @media #{$breakpoint-medium} {
           margin-right: 50px;
           width: 40%;
+        }
+        @media #{$breakpoint-large} {
+          margin-left: 150px;
         }
         img {
           object-fit: contain;
@@ -197,6 +211,10 @@
         width: 100%;
         @media #{$breakpoint-medium} {
           width: 60%;
+        }
+        @media #{$breakpoint-large} {
+          width: 45%;
+          margin-left: 100px;
         }
         img {
           object-fit: contain;
