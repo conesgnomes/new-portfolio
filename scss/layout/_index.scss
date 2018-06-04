@@ -27,6 +27,31 @@
     }
   }
 }
+.ux-journey {
+  h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  .journey-mobile {
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 50px;
+    @media #{$breakpoint-medium} {
+      display: none;
+    }
+  }
+  .journey-desktop {
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 50px;
+    @media #{$breakpoint-small} {
+      display: none;
+    }
+    @media #{$breakpoint-medium} {
+      display: block;
+    }
+  }
+}
 .index-body {
   .project-left {
     // @media #{$breakpoint-medium} {
