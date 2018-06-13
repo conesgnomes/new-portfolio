@@ -81,6 +81,9 @@
   }
   .rrg-img1 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media #{$breakpoint-medium} {
       margin-top: -50px;
     }
@@ -90,6 +93,7 @@
     img {
       object-fit: contain;
       width: 100%;
+      max-width: 1000px;
     }
   }
 }
@@ -186,6 +190,7 @@
       img {
         object-fit: contain;
         width: 100%;
+        max-width: 300px;
         @media #{$breakpoint-large} {
           width: 70%;
         }
@@ -357,6 +362,7 @@
       img {
         object-fit: contain;
         width: 100%;
+        max-width: 400px;
         @media #{$breakpoint-large} {
           width: 70%;
         }

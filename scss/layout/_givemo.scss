@@ -72,6 +72,9 @@
     .givemo-screengrab {
       width: 100%;
       margin-bottom: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       @media #{$breakpoint-medium} {
         margin-bottom: 40px;
         padding: 0 20px;
@@ -79,6 +82,7 @@
       img {
         object-fit: contain;
         width: 100%;
+        max-width: 250px;
         box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
       }
     }
@@ -155,7 +159,7 @@
       padding: 0 150px;
     }
   }
-  .mockup-overview-group {
+  .wireframe-overview-group {
     h2 {
       margin-bottom: 35px;
       @media #{$breakpoint-medium} {
@@ -167,33 +171,74 @@
       @media #{$breakpoint-xlarge} {
         padding: 0 150px;
       }
-      &:nth-of-type(2),
-      &:nth-of-type(3),
-      &:nth-of-type(4),
-      &:nth-of-type(5),
-      &:nth-of-type(6),
-      &:nth-of-type(7) {
-        margin-top: 50px;
-        @media #{$breakpoint-large} {
-          margin-top: 75px;
+    }
+    .givemo-overview {
+      margin-top: -15px;
+      .wireframe-group {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        &:last-of-type {
+          margin-top: 35px;
+          @media #{$breakpoint-medium} {
+            margin-top: 50px;
+          }
+        }
+        img {
+          object-fit: contain;
+          width: 30%;
+          max-width: 200px;
+          &:nth-of-type(2) {
+            margin: 0 5%;
+          }
         }
       }
     }
-    .givemo-overview {
-      margin: -15px auto 0 auto;
-      width: 100%;
-      @media #{$breakpoint-medium} {
-        width: 80%;
-      }
-      @media #{$breakpoint-large} {
-        width: 60%;
-      }
-      img {
-        object-fit: contain;
-        width: 100%;
-      }
-    }
   }
+  // .mockup-overview-group {
+  //   h2 {
+  //     margin-bottom: 35px;
+  //     @media #{$breakpoint-medium} {
+  //       padding: 0 75px;
+  //     }
+  //     @media #{$breakpoint-large} {
+  //       margin-bottom: 50px;
+  //     }
+  //     @media #{$breakpoint-xlarge} {
+  //       padding: 0 150px;
+  //     }
+  //     &:nth-of-type(2),
+  //     &:nth-of-type(3),
+  //     &:nth-of-type(4),
+  //     &:nth-of-type(5),
+  //     &:nth-of-type(6),
+  //     &:nth-of-type(7) {
+  //       margin-top: 50px;
+  //       @media #{$breakpoint-large} {
+  //         margin-top: 75px;
+  //       }
+  //     }
+  //   }
+  //   .givemo-overview {
+  //     margin: -15px auto 0 auto;
+  //     width: 100%;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     @media #{$breakpoint-medium} {
+  //       width: 80%;
+  //     }
+  //     @media #{$breakpoint-large} {
+  //       width: 60%;
+  //     }
+  //     img {
+  //       object-fit: contain;
+  //       width: 100%;
+  //       max-width: 500px;
+  //     }
+  //   }
+  // }
   .ux-text {
     margin-top: 60px;
     @media #{$breakpoint-medium} {
