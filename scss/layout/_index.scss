@@ -27,38 +27,38 @@
     }
   }
 }
-.ux-journey {
-  h1 {
-    margin-top: 100px;
-    margin-bottom: 20px;
-  }
-  .ux-journey-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .journey-mobile {
-      object-fit: contain;
-      width: 100%;
-      max-width: 332px;
-      margin-bottom: 50px;
-      @media #{$breakpoint-medium} {
-        display: none;
-      }
-    }
-    .journey-desktop {
-      object-fit: contain;
-      width: 100%;
-      max-width: 840px;
-      margin-bottom: 50px;
-      @media #{$breakpoint-small} {
-        display: none;
-      }
-      @media #{$breakpoint-medium} {
-        display: block;
-      }
-    }
-  }
-}
+// .ux-journey {
+//   h1 {
+//     margin-top: 100px;
+//     margin-bottom: 20px;
+//   }
+//   .ux-journey-img {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .journey-mobile {
+//       object-fit: contain;
+//       width: 100%;
+//       max-width: 332px;
+//       margin-bottom: 50px;
+//       @media #{$breakpoint-medium} {
+//         display: none;
+//       }
+//     }
+//     .journey-desktop {
+//       object-fit: contain;
+//       width: 100%;
+//       max-width: 840px;
+//       margin-bottom: 50px;
+//       @media #{$breakpoint-small} {
+//         display: none;
+//       }
+//       @media #{$breakpoint-medium} {
+//         display: block;
+//       }
+//     }
+//   }
+// }
 .index-body {
   .project-left {
     // @media #{$breakpoint-medium} {
