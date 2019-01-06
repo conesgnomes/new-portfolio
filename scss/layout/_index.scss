@@ -70,218 +70,163 @@
 //   }
 // }
 .index-body {
-  margin-top: 100px;
+  @media #{$breakpoint-medium} {
+    margin-top: 100px;
+  }
   .project-right {
-    .booth { // Styling for Laptop and Phone img
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media #{$breakpoint-medium} {
+      flex-direction: row;
       align-items: center;
+    }
+    .project-image {
+      width: 100%;
       @media #{$breakpoint-medium} {
-        flex-direction: row;
+        width: 50%;
       }
-      .project-image {
+      @media #{$breakpoint-large} {
+        // margin-left: 100px;
+      }
+      @media #{$breakpoint-xlarge} {
+        // max-width: 100%;
+      }
+      img {
+        object-fit: contain;
         width: 100%;
-        @media #{$breakpoint-medium} {
-          width: 70%;
-          margin-right: 50px;
-        }
-        @media #{$breakpoint-large} {
-          width: 40%;
-          margin-right: 100px;
-          margin-left: 100px;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-        }
+        // max-width: 350px;
       }
-      .project-text {
+    }
+    .project-text {
+      @media #{$breakpoint-medium} {
         margin-left: 50px;
-        @include project-overview;
-        .button-container {
-          @include cta-button(#1793C3);
-        }
+        width: 350px;
+      }
+      @include project-overview;
+      .button-container-booth {
+        @include cta-button(#1793C3);
+      }
+      .button-container-rrg {
+        @include cta-button(#752929);
       }
     }
   }
   .project-left {
-    .rrg {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media #{$breakpoint-medium} {
+      flex-direction: row-reverse;
       align-items: center;
+      // justify-content: flex-end;
+    }
+    .project-image {
+      width: 100%;
       @media #{$breakpoint-medium} {
-        flex-direction: row-reverse;
+        width: 50%;
       }
-      .project-image {
-        width: 100%;
-        @media #{$breakpoint-medium} {
-          width: 70%;
-        }
-        @media #{$breakpoint-large} {
-          width: 45%;
-          margin-left: 100px;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-        }
-      }
-      .project-text {
+      @media #{$breakpoint-large} {
         margin-left: 50px;
-        @include project-overview;
-        .button-container {
-          @include cta-button(#752929);
-        }
+      }
+      @media #{$breakpoint-xlarge} {
+        margin-left: 100px;
+        // max-width: 100%;
+      }
+      img {
+        object-fit: contain;
+        width: 100%;
+        // max-width: 350px;
       }
     }
-  }
-  .project-right {
-    .daily {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .project-text {
       @media #{$breakpoint-medium} {
-        flex-direction: row;
-      }
-      .project-image {
-        width: 100%;
-        @media #{$breakpoint-medium} {
-          margin-right: 50px;
-          width: 40%;
-        }
-        @media #{$breakpoint-large} {
-          margin-left: 150px;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-          height: 300px;
-          @media #{$breakpoint-large} {
-            height: 350px;
-          }
-          @media #{$breakpoint-xlarge} {
-            height: 400px;
-          }
-        }
-      }
-      .project-text {
-        @include project-overview;
-        .button-container {
-          @include cta-button(#CCAE78);
-        }
-      }
-    }
-  }
-  .project-left {
-    .sq1-raffle {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media #{$breakpoint-medium} {
-        flex-direction: row-reverse;
-      }
-      .project-image {
-        width: 100%;
-        @media #{$breakpoint-medium} {
-          width: 70%;
-        }
-        @media #{$breakpoint-large} {
-          width: 45%;
-          margin-left: 170px;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-        }
-      }
-      .project-text {
         margin-left: 50px;
-        @include project-overview;
-        .button-container {
-          @include cta-button(#D92118);
-        }
+        width: 350px;
+      }
+      @include project-overview;
+      .button-container-daily {
+        @include cta-button(#CCAE78);
+      }
+      .button-container-sq1 {
+        @include cta-button(#D92118);
       }
     }
   }
-  .project-right {
-    .givemo { // Styling for Phone only img
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media #{$breakpoint-medium} {
-        flex-direction: row;
-      }
-      .project-image {
-        width: 100%;
-        margin-bottom: 30px;
-        @media #{$breakpoint-medium} {
-          width: 40%;
-          margin-right: 50px;
-          margin-left: 150px;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-          height: 300px;
-          @media #{$breakpoint-large} {
-            height: 350px;
-          }
-          @media #{$breakpoint-xlarge} {
-            height: 400px;
-          }
-        }
-      }
-      .project-text {
-        @include project-overview;
-        .button-container {
-          @include cta-button(#6DBE99);
-        }
-      }
-    }
-  }
-  .project-left {
-    // @media #{$breakpoint-medium} {
-    //   padding-left: 75px;
-    // }
-    // @media #{$breakpoint-xlarge} {
-    //   padding-left: 150px;
-    // }
-    .afrikan-clothing-co {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media #{$breakpoint-medium} {
-        flex-direction: row-reverse;
-      }
-      .project-image {
-        width: 100%;
-        @media #{$breakpoint-medium} {
-          width: 60%;
-        }
-        @media #{$breakpoint-large} {
-          width: 45%;
-          margin-left: 130px;
-        }
-        img {
-          object-fit: contain;
-          width: 100%;
-        }
-      }
-      .project-text {
-        @include project-overview;
-        margin-left: 50px;
-        .button-container {
-          @include cta-button(#EF9501);
-        }
-      }
-    }
-  }
+  // .project-left {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   @media #{$breakpoint-medium} {
+  //     flex-direction: row-reverse;
+  //   }
+  //   .project-image {
+  //     width: 100%;
+  //     // max-width: 350px;
+  //     @media #{$breakpoint-medium} {
+  //       width: 40%;
+  //       margin-right: 50px;
+  //       margin-left: 50px;
+  //     }
+  //     img {
+  //       object-fit: contain;
+  //       width: 100%;
+  //       height: 300px;
+  //       @media #{$breakpoint-large} {
+  //         height: 350px;
+  //       }
+  //       @media #{$breakpoint-xlarge} {
+  //         height: 400px;
+  //       }
+  //     }
+  //   }
+  //   .project-text {
+  //     @include project-overview;
+  //     .button-container-daily {
+  //       @include cta-button(#CCAE78);
+  //     }
+  //     .button-container-sq1 {
+  //       @include cta-button(#D92118);
+  //     }
+  //   }
+  // }
+  // .project-left {
+  //   margin-top: 50px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   @media #{$breakpoint-medium} {
+  //     flex-direction: row-reverse;
+  //   }
+  //   .project-image {
+  //     width: 100%;
+  //     @media #{$breakpoint-medium} {
+  //       width: 70%;
+  //     }
+  //     @media #{$breakpoint-large} {
+  //       width: 45%;
+  //       margin-left: 100px;
+  //     }
+  //     img {
+  //       object-fit: contain;
+  //       width: 100%;
+  //     }
+  //   }
+  //   .project-text {
+  //     margin-left: 50px;
+  //     @include project-overview;
+  //     .button-container-sq1 {
+  //       @include cta-button(#D92118);
+  //     }
+  //     .button-container-acc {
+  //       @include cta-button(#EF9501);
+  //     }
+  //   }
+  // }
+}
+
+// Old Projects
+
   // .project-left {
   //   margin-top: 50px;
   //   @media #{$breakpoint-medium} {
@@ -395,4 +340,3 @@
   //     }
   //   }
   // }
-}
