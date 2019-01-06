@@ -87,15 +87,12 @@
         width: 50%;
       }
       @media #{$breakpoint-large} {
-        // margin-left: 100px;
       }
       @media #{$breakpoint-xlarge} {
-        // max-width: 100%;
       }
       img {
         object-fit: contain;
         width: 100%;
-        // max-width: 350px;
       }
     }
     .project-text {
@@ -119,7 +116,6 @@
     @media #{$breakpoint-medium} {
       flex-direction: row-reverse;
       align-items: center;
-      // justify-content: flex-end;
     }
     .project-image {
       width: 100%;
@@ -131,12 +127,10 @@
       }
       @media #{$breakpoint-xlarge} {
         margin-left: 100px;
-        // max-width: 100%;
       }
       img {
         object-fit: contain;
         width: 100%;
-        // max-width: 350px;
       }
     }
     .project-text {
@@ -153,76 +147,6 @@
       }
     }
   }
-  // .project-left {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   @media #{$breakpoint-medium} {
-  //     flex-direction: row-reverse;
-  //   }
-  //   .project-image {
-  //     width: 100%;
-  //     // max-width: 350px;
-  //     @media #{$breakpoint-medium} {
-  //       width: 40%;
-  //       margin-right: 50px;
-  //       margin-left: 50px;
-  //     }
-  //     img {
-  //       object-fit: contain;
-  //       width: 100%;
-  //       height: 300px;
-  //       @media #{$breakpoint-large} {
-  //         height: 350px;
-  //       }
-  //       @media #{$breakpoint-xlarge} {
-  //         height: 400px;
-  //       }
-  //     }
-  //   }
-  //   .project-text {
-  //     @include project-overview;
-  //     .button-container-daily {
-  //       @include cta-button(#CCAE78);
-  //     }
-  //     .button-container-sq1 {
-  //       @include cta-button(#D92118);
-  //     }
-  //   }
-  // }
-  // .project-left {
-  //   margin-top: 50px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   @media #{$breakpoint-medium} {
-  //     flex-direction: row-reverse;
-  //   }
-  //   .project-image {
-  //     width: 100%;
-  //     @media #{$breakpoint-medium} {
-  //       width: 70%;
-  //     }
-  //     @media #{$breakpoint-large} {
-  //       width: 45%;
-  //       margin-left: 100px;
-  //     }
-  //     img {
-  //       object-fit: contain;
-  //       width: 100%;
-  //     }
-  //   }
-  //   .project-text {
-  //     margin-left: 50px;
-  //     @include project-overview;
-  //     .button-container-sq1 {
-  //       @include cta-button(#D92118);
-  //     }
-  //     .button-container-acc {
-  //       @include cta-button(#EF9501);
-  //     }
-  //   }
-  // }
 }
 
 // Old Projects
