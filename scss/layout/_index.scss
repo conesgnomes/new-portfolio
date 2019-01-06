@@ -13,12 +13,14 @@
     margin-bottom: 50px;
     a {
       text-decoration: none;
-      border-bottom: solid #000000 1px;
+      // text-transform: uppercase;
+      // border-bottom: solid #999999 1px;
       padding-bottom: 1px;
-      color: #000000;
-      transition: border-bottom-width .15s;
+      color: #999999;
+      transition: color 0.2s ease-in;
       &:hover {
-        border-bottom-width: 3px;
+        // border-bottom: solid #000000 3px;
+        color: #000000;
       }
     }
   }
@@ -71,9 +73,10 @@
 // }
 .index-body {
   @media #{$breakpoint-medium} {
-    margin-top: 100px;
+    // margin-top: 100px;
   }
   .project-right {
+    margin-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -110,6 +113,7 @@
     }
   }
   .project-left {
+    margin-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -145,6 +149,14 @@
       .button-container-sq1 {
         @include cta-button(#D92118);
       }
+    }
+  }
+  .mobile-project {
+    @media #{$breakpoint-medium} {
+      margin: -25px 0 -50px 0;
+    }
+    @media #{$breakpoint-xlarge} {
+      margin: -50px 0 -100px 0;
     }
   }
 }
