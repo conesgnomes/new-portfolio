@@ -426,14 +426,19 @@ template {
   display: none;
 }
 
-body {
-  padding: 0 20px;
-  @media #{$breakpoint-large} {
-    padding: 0 75px;
-  }
-  @media #{$breakpoint-xlarge} {
-    padding: 0 150px;
-  }
+.index {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // padding: 0 20px;
+  // @media #{$breakpoint-large} {
+  //   padding: 0 75px;
+  // }
+  // @media #{$breakpoint-xlarge} {
+  //   padding: 0 150px;
+  // }
 }
 
 ul {
