@@ -27,14 +27,14 @@
       &:hover {
         background-color: $button-color;
         > a {
-          color: #000000;
+          color: #1C2124;
         }
       }
     }
   }
 }
 
-@mixin project-group($background-image) {
+@mixin project-group($background-image, $button-color) {
   margin-top: 50px;
   background-image: $background-image;
   background-repeat: no-repeat;
@@ -43,14 +43,11 @@
   height: 300px;
   background-size: cover;
   .project-text-background {
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(28, 31, 36, 0.93);
     height: inherit;
     display: flex;
     align-items: center;
     width: 75%;
-    @media #{$breakpoint-medium} {
-
-    }
     @media #{$breakpoint-large} {
       width: 50%;
     }
@@ -69,7 +66,7 @@
         margin-top: 40px;
       }
       .button-container {
-        @include cta-button(#ffffff);
+        @include cta-button($button-color);
       }
     }
   }

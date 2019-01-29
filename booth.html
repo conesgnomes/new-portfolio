@@ -9,6 +9,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-113485819-1');
     </script>
+    <script src="node_modules/swup/dist/swup.js"></script>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="build/css/vendor.css"> UNCOMMENT IF YOU INSTALL ANY CSS COMPONENTS WITH BOWER -->
     <link rel="stylesheet" href="build/css/main.css">
@@ -18,16 +19,17 @@
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>connor larsen dot com</title>
   </head>
-  <body class="subpage">
+  <main id="swup" class="transition-fade">
+    <body class="subpage">
     <nav class="nav-pages">
       <ul class="navigation">
         <li><a class="nav-item" href="index.html">projects</a></li>
         <li><a class="nav-item" href="bio.html">bio</a></li>
-        <li><a class="nav-item" href="mailto:connorlarsen@gmail.com">contact</a></li>
+        <li><a class="nav-item" target="_blank" href="https://www.dropbox.com/s/0vokc1do3ko29n5/Larsen_Resume.pdf?dl=0">resumé</a></li>
       </ul>
     </nav>
     <header class="booth-header">
-      <p class="title">Booth Lake Landing Resort</p>
+      <p class="title">Booth Lake Landing</p>
       <p class="subtitle">UX/UI Design</p>
     </header>
     <section class="booth-overview">
@@ -254,5 +256,9 @@
     <footer>
       <p>©2019 Connor Larsen *made from scratch</p>
     </footer>
+    <script>
+      const swup = new Swup();
+    </script>
   </body>
+  </main>
 </html>

@@ -1,54 +1,62 @@
-.index-header {
-  margin-top: 150px;
-  padding: 0 15px;
-  @media #{$breakpoint-medium} {
-    padding: 0 150px;
-  }
-  @media #{$breakpoint-large} {
-    margin-top: 200px;
-  }
-  @media #{$breakpoint-xlarge} {
-    padding: 0 300px;
-  }
-  h2 {
-    margin-bottom: 50px;
-    a {
-      text-decoration: none;
-      padding-bottom: 1px;
-      color: #999999;
-      transition: color 0.2s ease-in;
-      &:hover {
-        color: #000000;
+.transition-fade {
+  transition: .4s;
+  opacity: 1;
+  .index-header {
+    transition: .4s;
+    opacity: 1;
+    margin-top: 150px;
+    padding: 0 15px;
+    @media #{$breakpoint-medium} {
+      padding: 0 150px;
+    }
+    @media #{$breakpoint-large} {
+      margin-top: 200px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 300px;
+    }
+    h2 {
+      margin-bottom: 50px;
+      a {
+        text-decoration: none;
+        padding-bottom: 1px;
+        color: #999999;
+        transition: color 0.2s ease-in;
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      .social-item {
+        padding: 0 15px;
+        transition: color 0.2s ease-in;
+        &:hover {
+          color: #000000;
+        }
+        @media #{$breakpoint-medium} {
+          padding: 0 25px;
+        }
       }
     }
   }
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    .social-item {
-      padding: 0 15px;
-      transition: color 0.2s ease-in;
-      &:hover {
-        color: #000000;
-      }
-      @media #{$breakpoint-medium} {
-        padding: 0 25px;
-      }
+  .index-body {
+    .project-group-1 {
+      @include project-group(url('/../img/index-GDS.png'), #EE968A);
+    }
+    .project-group-2 {
+      @include project-group(url('/../img/index-daily.png'), #C8AE7F);
+    }
+    .project-group-3 {
+      @include project-group(url('/../img/index-booth.png'), #F3C85E);
     }
   }
 }
-.index-body {
-  .project-group-1 {
-    @include project-group(url('/../img/index-GDS.png'));
-  }
-  .project-group-2 {
-    @include project-group(url('/../img/index-daily.png'));
-  }
-  .project-group-3 {
-    @include project-group(url('/../img/index-booth.png'));
-  }
+html.is-animating .transition-fade {
+  opacity: 0;
 }
-
   // .project-right {
   //   margin-top: 75px;
   //   display: flex;
